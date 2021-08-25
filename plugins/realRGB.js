@@ -4,10 +4,8 @@ function realRgbPlugin(k) {
             if (!a) a = 1;
 
             return k.rgba(r / 255, g / 255, b / 255, a);
-        },
-        realHex(code) {
-            if(!code) code = "#FFFFFF";
-            code.replace("#", "");
         }
     };
 }
+
+export { realRgbPlugin };
