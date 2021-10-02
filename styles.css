@@ -20,10 +20,12 @@ body {
 
 .tlaj {
     color: #F3FF58;
+    font-size: 2em;
 }
 
 .tbel {
     color: #EF56FE;
+    font-size: 2em;
 }
 
 .main-title:hover .tlaj {
@@ -120,6 +122,11 @@ li a:hover {
     justify-content: space-around;
 }
 
+.project {
+    width: 40%;
+    text-align: center;
+}
+
 /* Animations */
 
 @keyframes bound {
@@ -131,5 +138,18 @@ li a:hover {
     100% {
         transform: rotate(0.5deg);
         transition: .1s;        
+    }
+}
+
+/* Media queries */
+
+@media screen and (max-width: 700px) {
+    .tlaj, .tbel {
+        font-size: 1.5em;
+    }
+
+    .container-all {
+        width: 95%;
+        margin: 15px;
     }
 }
