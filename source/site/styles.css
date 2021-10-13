@@ -23,7 +23,12 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 60%
+    width: 60%;
+    animation-name: bound;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-duration: .8s;
 }
 
 /* Main Title */
@@ -98,7 +103,7 @@ body {
 
 .lajlist li a {
     font-size: 1.2em;
-    color: rgb(208, 255, 0);
+    color: #cf28df;
     text-decoration: none;
 }
 
@@ -145,4 +150,18 @@ body {
     width: 100%;
 	height: 60%;
     outline: 5px solid #2CC7DF;
+}
+
+/* KeyFrames */
+
+@keyframes bound {
+    0% {
+        transform: rotate(-0.5deg);
+        transition: .1s;
+    }
+
+    100% {
+        transform: rotate(0.5deg);
+        transition: .1s;        
+    }
 }
