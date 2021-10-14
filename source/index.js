@@ -20,6 +20,10 @@ app.get('/contact', (req, res) => {
 
 app.use(express.static(__dirname));
 
+app.use((req, res) => {
+    res.status(404).send("sad");
+});
+
 app.listen(3000, () => {
     console.log("LaJServ started!");
 });
