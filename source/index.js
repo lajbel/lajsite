@@ -1,28 +1,28 @@
-const express = require("express");
-const path = require("path");
+const express = require('express');
+const path = require('path');
 
 const app = express();
 
-app.engine("html", require("ejs").renderFile);
+app.engine('html', require('ejs').renderFile);
 
-app.set("view engine", "ejs");
+app.set('view engine', 'ejs');
 
 // Routes
 
 app.get('/', (req, res) => {
-    res.render(path.join(__dirname, "/site/home.html"));
+    res.render(path.join(__dirname, '/site/home.html'));
 });
 
 app.get('/portfolio', (req, res) => {
-    res.render(path.join(__dirname, "/site/portfolio.html"));
+    res.render(path.join(__dirname, '/site/portfolio.html'));
 });
 
 app.get('/contact', (req, res) => {
-    res.render(path.join(__dirname, "/site/contact.html"));
+    res.render(path.join(__dirname, '/site/contact.html'));
 });
 
-app.get("/:var(kofi|donate)", (req, res) => {
-    res.redirect("https://ko-fi.com/lajbel");
+app.get('/:var(kofi|donate)', (req, res) => {
+    res.redirect('https://ko-fi.com/lajbel');
 });
 
 // User
@@ -30,9 +30,9 @@ app.get("/:var(kofi|donate)", (req, res) => {
 app.use(express.static(__dirname));
 
 app.use((req, res) => {
-    res.status(404).send("sad");
+    res.status(404).send('sad');
 });
 
 app.listen(3000, () => {
-    console.log("LaJServ started!");
+    console.log('LaJServ started!');
 });

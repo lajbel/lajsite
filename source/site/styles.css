@@ -7,7 +7,7 @@
 
 body {
     font-family: Short Stack, italic;
-	background-color: rgb(51, 222, 248);
+    background-color: rgb(51, 222, 248);
     display: flex;
     justify-content: center;
 }
@@ -28,7 +28,7 @@ body {
     animation-timing-function: linear;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
-    animation-duration: .8s;
+    animation-duration: 0.8s;
 }
 
 /* Main Title */
@@ -47,7 +47,7 @@ body {
 
 .main-title:hover .y {
     transform: rotate(-7deg);
-    transition: .6s;
+    transition: 0.6s;
 }
 
 .main-title .p {
@@ -57,7 +57,7 @@ body {
 
 .main-title:hover .p {
     transform: rotate(10deg) translate(0px, 20px);
-    transition: .6s;
+    transition: 0.6s;
 }
 
 /* LaJVatar */
@@ -65,7 +65,7 @@ body {
 .lajvatar {
     display: flex;
     justify-content: center;
-    width: 100%;   
+    width: 100%;
 }
 
 .lajvatar img {
@@ -79,7 +79,7 @@ body {
 
 .bio {
     text-align: center;
-    margin: 20px 0px 0px 0px
+    margin: 20px 0px 0px 0px;
 }
 
 /* Lajlist */
@@ -89,12 +89,12 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 30px 0px 0px 0px
+    margin: 30px 0px 0px 0px;
 }
 
 .lajlist h2 {
     font-size: 2em;
-    color: rgb(252, 151, 0)
+    color: rgb(252, 151, 0);
 }
 
 .lajlist ul {
@@ -113,7 +113,7 @@ body {
 }
 
 .lajlist li.pageli a:after {
-    content: ">>>"
+    content: '>>>';
 }
 
 /* Projects */
@@ -129,8 +129,8 @@ body {
     width: 220px;
     height: 280px;
     text-align: center;
-	margin: 10px 10px 10px 10px;
-	border-radius: 12px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 12px;
 }
 
 .project h2 {
@@ -148,7 +148,7 @@ body {
 
 .project img {
     width: 100%;
-	height: 60%;
+    height: 60%;
     outline: 5px solid #2CC7DF;
 }
 
@@ -157,11 +157,11 @@ body {
 @keyframes bound {
     0% {
         transform: rotate(-0.5deg);
-        transition: .1s;
+        transition: 0.1s;
     }
 
     100% {
         transform: rotate(0.5deg);
-        transition: .1s;        
+        transition: 0.1s;
     }
 }
