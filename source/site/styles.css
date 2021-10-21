@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
 
+:root {
+    --page-color: #AEECEF;
+    --border-color: #80DED9;
+    --background-color: #AEECEF;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -7,7 +13,7 @@
 
 body {
     font-family: Short Stack, italic;
-    background-color: rgb(51, 222, 248);
+    background: var(--background-color);
     display: flex;
     justify-content: center;
 }
@@ -15,8 +21,8 @@ body {
 /* Page */
 
 .page {
-    background-color: #6AEBFF;
-    border: 7px solid #2CC7DF;
+    background-color: var(--page-color);
+    border: 7px solid var(--border-color);
     border-radius: 40px;
     margin: 40px;
     padding: 20px;
@@ -70,7 +76,7 @@ body {
 
 .lajvatar img {
     border-radius: 50%;
-    outline: 5px solid #2CC7DF;
+    outline: 5px solid var(--border-color);
     width: 100%;
     max-width: 260px;
 }
@@ -149,7 +155,7 @@ body {
 .project img {
     width: 100%;
     height: 60%;
-    outline: 5px solid #2CC7DF;
+    outline: 5px solid var(--border-color);
 }
 
 /* KeyFrames */
