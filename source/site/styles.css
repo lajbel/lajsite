@@ -5,11 +5,12 @@
 ----------------------*/
 
 :root {
-    --page-color: #6AEBFF;
+    --page-color: #94f0ff;
     --border-color: #2CC7DF;
     --background-color: #AEECEF;
-    --link-color: #CF28DF;
+    --link-color: #7c76ff;
     --link-color-hv: #EF56FE;
+    --list-title-color: #F59E42;
     --font: Short Stack, italic;
 }
 
@@ -58,7 +59,7 @@ body {
 }
 
 .main-title .y {
-    color: #F3FF58;
+    color: #FFFC98;
     font-size: 3em;
 }
 
@@ -68,7 +69,7 @@ body {
 }
 
 .main-title .p {
-    color: #EF56FE;
+    color: #FF98F5;
     font-size: 3em;
 }
 
@@ -117,7 +118,7 @@ body {
 
 .lajlist h2 {
     font-size: 2em;
-    color: rgb(252, 151, 0);
+    color: var(--list-title-color);
 }
 
 .lajlist ul {
