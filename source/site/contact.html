@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <link rel="stylesheet" href="site/styles.css" />
+        <%- include("../partials/head.html") %>
+    </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>LaJBel's Hub</title>
-	<link rel="stylesheet" href="site/styles.css">
-</head>
+    <body>
+        <div class="page">
+            <h1 class="main-title">
+                <div class="y">Cont</div>
+                <div class="p">Act</div>
+            </h1>
 
-<body>
-	<div class="page">
-        <h1 class="main-title">
-            <div class="y">Cont</div>
-            <div class="p">Act</div>
-        </h1>
-
-        <%- include("../partials/email.html") %>
-
-        <%- include("../partials/nav.html") %>
-    </div>
-</body>
-
+            <%- include("../partials/email.html") %> <%- include("../partials/nav.html") %>
+        </div>
+    </body>
 </html>

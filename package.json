@@ -4,7 +4,8 @@
     "description": "",
     "main": "source/server.js",
     "scripts": {
-        "start": "node source/server.js"
+        "start": "node source/server.js",
+        "prettier": "npx prettier --write ."
     },
     "keywords": [],
     "author": "",

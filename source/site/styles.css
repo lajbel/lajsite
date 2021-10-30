@@ -6,11 +6,11 @@
 
 :root {
     --page-color: #94f0ff;
-    --border-color: #2CC7DF;
-    --background-color: #AEECEF;
+    --border-color: #2cc7df;
+    --background-color: #aeecef;
     --link-color: #7c76ff;
-    --link-color-hv: #EF56FE;
-    --list-title-color: #F59E42;
+    --link-color-hv: #ef56fe;
+    --list-title-color: #f59e42;
     --font: Short Stack, italic;
 }
 
@@ -59,7 +59,7 @@ body {
 }
 
 .main-title .y {
-    color: #FFFC98;
+    color: #fffc98;
     font-size: 3em;
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .main-title .p {
-    color: #FF98F5;
+    color: #ff98f5;
     font-size: 3em;
 }
 
@@ -169,7 +169,7 @@ body {
 }
 
 .project a:hover {
-    color: #EF56FE;
+    color: #ef56fe;
 }
 
 .project img {
@@ -256,5 +256,20 @@ form button:hover {
     100% {
         transform: rotate(0.5deg);
         transition: 0.1s;
+    }
+}
+
+/*----------------------
+    media queries
+----------------------*/
+
+@media only screen and (max-width: 500px) {
+    .page {
+        width: 100%;
+    }
+
+    .main-title .y,
+    .main-title .p {
+        font-size: 4rem;
     }
 }
