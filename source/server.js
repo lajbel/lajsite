@@ -1,10 +1,10 @@
 const express = require('express');
+const sass = require('node-sass-middleware');
 const path = require('path');
 
 const app = express();
 
 app.engine('html', require('ejs').renderFile);
-
 app.set('view engine', 'ejs');
 
 // Routes
