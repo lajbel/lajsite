@@ -13,13 +13,13 @@ form {
     input {
         font-family: var(--main-font-family);
     }
-}
 
-form textarea {
-    font-family: var(--main-font-family);
-    padding: 10px;
-    border: none;
-    resize: none;
+	textarea {
+    	font-family: var(--main-font-family);
+    	padding: 10px;
+    	border: none;
+    	resize: none;
+	}
 }
 
 form textarea:focus {

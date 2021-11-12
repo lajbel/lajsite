@@ -12,9 +12,13 @@
     "license": "ISC",
     "dependencies": {
         "ejs": "^3.1.6",
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "express-compile-sass": "^4.0.0",
+        "node-sass-middleware": "^0.11.0",
+        "sass": "^1.43.4"
     },
     "devDependencies": {
+        "nodemon": "^2.0.15",
         "prettier": "^2.4.1"
     }
 }

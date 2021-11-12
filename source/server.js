@@ -1,5 +1,5 @@
 const express = require('express');
-const sass = require('node-sass-middleware');
+const sass= require('express-compile-sass');
 const path = require('path');
 
 const app = express();
@@ -25,7 +25,15 @@ app.get('/:var(kofi|donate)', (req, res) => {
     res.redirect('https://ko-fi.com/lajbel');
 });
 
-// User
+// Uses
+
+app.use(sass({
+	root: __dirname,
+    sourceMap: false,
+    sourceComments: false,
+    watchFiles: true,
+    logToConsole: false
+}));
 
 app.use(express.static(__dirname));
 
