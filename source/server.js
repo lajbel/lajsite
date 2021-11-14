@@ -24,6 +24,11 @@ app.get('/:var(kofi|donate)', (req, res) => {
     res.redirect('https://ko-fi.com/L3L26XTGV');
 });
 
+app.get('/bwd', (req, res) => {
+    res.redirect('https://lajbel.itch.io/bug-wanna-die');
+});
+
+
 // Uses
 
 app.use(

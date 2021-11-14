@@ -1,0 +1,38 @@
+$list-title-color: #EF7B45;
+$list-link-color: #7C76FF;
+$list-link-hover-color: #EF56FE;
+
+.lajlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+
+	h2 {
+		font-size: 2em;
+    	color: $list-title-color;
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	a {
+		font-size: 1.2em;
+    	color: $list-link-color;
+    	text-decoration: none;
+
+		&:hover {
+			color: $list-link-hover-color;
+    		text-decoration: underline;
+		}
+	}
+
+	.pageli {
+		a:after {
+			content: ' >';
+		}
+	}
+	
+}

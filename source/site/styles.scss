@@ -1,12 +1,11 @@
+@import 'styles/email';
+@import 'styles/list';
 @import 'styles/page';
+
 @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
 
-/*----------------------
-  variables and other
-----------------------*/
-
 :root {
-    --page-color: #78d1f7;
+    --page-color: #78D1F7;
     --border-color: #2bb7f3;
     --background-color: #2bb7f3;
     --link-color: #7c76ff;
@@ -36,27 +35,29 @@ body {
     display: inline-flex;
     justify-content: center;
     position: relative;
-    user-select: none;
-}
+	cursor: default;
 
-.main-title .y {
-    color: #fffc98;
-    font-size: 3em;
-}
+    .y {
+        color: #fffc98;
+        font-size: 3em;
+    }
 
-.main-title:hover .y {
-    transform: rotate(-7deg);
-    transition: 0.6s;
-}
+    .p {
+        color: #ff98f5;
+        font-size: 3em;
+    }
 
-.main-title .p {
-    color: #ff98f5;
-    font-size: 3em;
-}
+	&:hover {
+		.y {
+			transform: rotate(-7deg);
+            transition: 0.6s;
+		}
 
-.main-title:hover .p {
-    transform: rotate(10deg) translate(0px, 20px);
-    transition: 0.6s;
+		.p {
+			transform: rotate(10deg) translate(0px, 20px);
+            transition: 0.6s;
+		}
+	}
 }
 
 /*----------------------
@@ -84,42 +85,6 @@ body {
     text-align: center;
     margin: 20px 0px 0px 0px;
     padding: 0px 80px;
-}
-
-/*----------------------
-    lists
-----------------------*/
-
-.lajlist {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 30px 0px 0px 0px;
-}
-
-.lajlist h2 {
-    font-size: 2em;
-    color: var(--list-title-color);
-}
-
-.lajlist ul {
-    list-style: none;
-}
-
-.lajlist li a {
-    font-size: 1.2em;
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-.lajlist li a:hover {
-    color: var(--link-color-hv);
-    text-decoration: underline;
-}
-
-.lajlist li.pageli a:after {
-    content: ' >';
 }
 
 /*----------------------
@@ -164,9 +129,8 @@ body {
     media queries
 ----------------------*/
 
-@media only screen and (max-width: 500px) {
-    .main-title .y,
-    .main-title .p {
-        font-size: 4rem;
-    }
+@media only screen and (max-width: 992px) {
+	.bio {
+		padding: 0px 30px;
+	}
 }
