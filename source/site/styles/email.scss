@@ -1,58 +1,58 @@
 .email {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 10px;
-    margin: 0 auto;
-    width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	margin: 0 auto;
+	width: 50%;
 
-    label {
-        font-family: var(--main-font-family);
-    }
+	label {
+		font-family: var(--main-font-family);
+	}
 
-    input {
-        font-family: var(--main-font-family);
-    }
+	input {
+		font-family: var(--main-font-family);
+	}
 
-    textarea {
-        font-family: var(--main-font-family);
-        padding: 10px;
-        border: none;
-        resize: none;
+	textarea {
+		font-family: var(--main-font-family);
+		padding: 10px;
+		border: none;
+		resize: none;
 
-        &:focus {
-            outline: none;
-            border: none;
-        }
-    }
+		&:focus {
+			outline: none;
+			border: none;
+		}
+	}
 
-    button {
-        font-family: var(--font);
-        margin-top: 15px;
-        font-size: 1.1rem;
-        text-align: center;
-        font-weight: bold;
-        border: none;
-        outline: none;
-        background: none;
+	button {
+		font-family: var(--font);
+		margin-top: 15px;
+		font-size: 1.1rem;
+		text-align: center;
+		font-weight: bold;
+		border: none;
+		outline: none;
+		background: none;
 
-        &:hover {
-            cursor: pointer;
-            color: var(--link-color-hv);
-        }
-    }
+		&:hover {
+			cursor: pointer;
+			color: var(--link-color-hv);
+		}
+	}
 
-    input[type='email'] {
-        text-align: center;
-        border: none;
-        background: none;
-        border-bottom: 2px solid var(--border-color);
+	input[type="email"] {
+		text-align: center;
+		border: none;
+		background: none;
+		border-bottom: 2px solid var(--border-color);
 
-        &:focus {
-            text-align: center;
-            border: none;
-            outline: none;
-            border-bottom: 2px solid var(--border-color);
-        }
-    }
+		&:focus {
+			text-align: center;
+			border: none;
+			outline: none;
+			border-bottom: 2px solid var(--border-color);
+		}
+	}
 }

@@ -1,17 +1,17 @@
-$list-title-color: #EF7B45;
-$list-link-color: #7C76FF;
-$list-link-hover-color: #EF56FE;
+$list-title-color: #ef7b45;
+$list-link-color: #7c76ff;
+$list-link-hover-color: #ef56fe;
 
 .lajlist {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 20px 0px 0px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	margin: 20px 0px 0px 0px;
 
 	h2 {
 		font-size: 2em;
-    	color: $list-title-color;
+		color: $list-title-color;
 	}
 
 	ul {
@@ -20,19 +20,18 @@ $list-link-hover-color: #EF56FE;
 
 	a {
 		font-size: 1.2em;
-    	color: $list-link-color;
-    	text-decoration: none;
+		color: $list-link-color;
+		text-decoration: none;
 
 		&:hover {
 			color: $list-link-hover-color;
-    		text-decoration: underline;
+			text-decoration: underline;
 		}
 	}
 
 	.pageli {
 		a:after {
-			content: ' >';
+			content: " >";
 		}
 	}
-	
 }

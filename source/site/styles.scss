@@ -1,30 +1,30 @@
-@import 'styles/email';
-@import 'styles/list';
-@import 'styles/page';
+@import "styles/email";
+@import "styles/list";
+@import "styles/page";
 
-@import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
 
 :root {
-    --page-color: #78D1F7;
-    --border-color: #2bb7f3;
-    --background-color: #2bb7f3;
-    --link-color: #7c76ff;
-    --link-color-hv: #ef56fe;
-    --list-title-color: #ef7b45;
-    --font: Short Stack, italic;
+	--page-color: #78d1f7;
+	--border-color: #2bb7f3;
+	--background-color: #2bb7f3;
+	--link-color: #7c76ff;
+	--link-color-hv: #ef56fe;
+	--list-title-color: #ef7b45;
+	--font: Short Stack, italic;
 }
 
 * {
-    padding: 0px;
-    margin: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 body {
-    font-family: var(--font);
-    background: var(--background-color);
-    display: flex;
-    justify-content: center;
-    color: #1a1423;
+	font-family: var(--font);
+	background: var(--background-color);
+	display: flex;
+	justify-content: center;
+	color: #1a1423;
 }
 
 /*----------------------
@@ -32,30 +32,30 @@ body {
 ----------------------*/
 
 .main-title {
-    display: inline-flex;
-    justify-content: center;
-    position: relative;
+	display: inline-flex;
+	justify-content: center;
+	position: relative;
 	cursor: default;
 
-    .y {
-        color: #fffc98;
-        font-size: 3em;
-    }
+	.y {
+		color: #fffc98;
+		font-size: 3em;
+	}
 
-    .p {
-        color: #ff98f5;
-        font-size: 3em;
-    }
+	.p {
+		color: #ff98f5;
+		font-size: 3em;
+	}
 
 	&:hover {
 		.y {
 			transform: rotate(-7deg);
-            transition: 0.6s;
+			transition: 0.6s;
 		}
 
 		.p {
 			transform: rotate(10deg) translate(0px, 20px);
-            transition: 0.6s;
+			transition: 0.6s;
 		}
 	}
 }
@@ -65,16 +65,16 @@ body {
 ----------------------*/
 
 .lajvatar {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 
 .lajvatar img {
-    border-radius: 50%;
-    outline: 5px solid var(--border-color);
-    width: 100%;
-    max-width: 260px;
+	border-radius: 50%;
+	outline: 5px solid var(--border-color);
+	width: 100%;
+	max-width: 260px;
 }
 
 /*----------------------
@@ -82,9 +82,9 @@ body {
 ----------------------*/
 
 .bio {
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-    padding: 0px 80px;
+	text-align: center;
+	margin: 20px 0px 0px 0px;
+	padding: 0px 80px;
 }
 
 /*----------------------
@@ -92,37 +92,37 @@ body {
 ----------------------*/
 
 .projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
 }
 
 .project {
-    width: 220px;
-    height: 280px;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
-    border-radius: 12px;
+	width: 220px;
+	height: 280px;
+	text-align: center;
+	margin: 10px 10px 10px 10px;
+	border-radius: 12px;
 }
 
 .project h2 {
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 .project a {
-    color: #f9a33b;
-    text-decoration: none;
+	color: #f9a33b;
+	text-decoration: none;
 }
 
 .project a:hover {
-    color: #ef56fe;
+	color: #ef56fe;
 }
 
 .project img {
-    width: 100%;
-    height: 60%;
-    outline: 5px solid var(--border-color);
+	width: 100%;
+	height: 60%;
+	outline: 5px solid var(--border-color);
 }
 
 /*----------------------
