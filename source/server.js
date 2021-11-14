@@ -1,39 +1,40 @@
 const express = require('express');
-const sass= require('express-compile-sass');
+const sass = require('express-compile-sass');
 const path = require('path');
 
 const app = express();
 
-app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
 // Routes
 
 app.get('/', (req, res) => {
-    res.render(path.join(__dirname, '/site/home.html'), {title: 'Home'});
+    res.render(path.join(__dirname, '/site/home.ejs'), {title: 'Home'});
 });
 
 app.get('/portfolio', (req, res) => {
-    res.render(path.join(__dirname, '/site/portfolio.html'), {title: 'Portfolio'});
+    res.render(path.join(__dirname, '/site/portfolio.ejs'), {title: 'Portfolio'});
 });
 
 app.get('/contact', (req, res) => {
-    res.render(path.join(__dirname, '/site/contact.html'), {title: 'Contact'});
+    res.render(path.join(__dirname, '/site/contact.ejs'), {title: 'Contact'});
 });
 
 app.get('/:var(kofi|donate)', (req, res) => {
-    res.redirect('https://ko-fi.com/lajbel');
+    res.redirect('https://ko-fi.com/L3L26XTGV');
 });
 
 // Uses
 
-app.use(sass({
-	root: __dirname,
-    sourceMap: false,
-    sourceComments: false,
-    watchFiles: true,
-    logToConsole: false
-}));
+app.use(
+    sass({
+        root: __dirname,
+        sourceMap: false,
+        sourceComments: false,
+        watchFiles: true,
+        logToConsole: false,
+    })
+);
 
 app.use(express.static(__dirname));
 

@@ -1,3 +1,4 @@
+@import 'styles/page';
 @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
 
 /*----------------------
@@ -5,12 +6,12 @@
 ----------------------*/
 
 :root {
-    --page-color: #94f0ff;
-    --border-color: #2cc7df;
-    --background-color: #aeecef;
+    --page-color: #78d1f7;
+    --border-color: #2bb7f3;
+    --background-color: #2bb7f3;
     --link-color: #7c76ff;
     --link-color-hv: #ef56fe;
-    --list-title-color: #f59e42;
+    --list-title-color: #ef7b45;
     --font: Short Stack, italic;
 }
 
@@ -24,27 +25,7 @@ body {
     background: var(--background-color);
     display: flex;
     justify-content: center;
-}
-
-/*----------------------
-    page
-----------------------*/
-
-.page {
-    background-color: var(--page-color);
-    border: 7px solid var(--border-color);
-    border-radius: 40px;
-    margin: 40px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 60%;
-    animation-name: bound;
-    animation-timing-function: linear;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
-    animation-duration: 0.8s;
+    color: #1a1423;
 }
 
 /*----------------------
@@ -102,7 +83,7 @@ body {
 .bio {
     text-align: center;
     margin: 20px 0px 0px 0px;
-	padding: 0px 80px;
+    padding: 0px 80px;
 }
 
 /*----------------------
@@ -138,7 +119,7 @@ body {
 }
 
 .lajlist li.pageli a:after {
-    content: '>>>';
+    content: ' >';
 }
 
 /*----------------------
@@ -179,35 +160,11 @@ body {
     outline: 5px solid var(--border-color);
 }
 
-/*──────────────────
-    email form
-──────────────────*/
-
-/*----------------------
-    animations
-----------------------*/
-
-@keyframes bound {
-    0% {
-        transform: rotate(-0.5deg);
-        transition: 0.1s;
-    }
-
-    100% {
-        transform: rotate(0.5deg);
-        transition: 0.1s;
-    }
-}
-
 /*----------------------
     media queries
 ----------------------*/
 
 @media only screen and (max-width: 500px) {
-    .page {
-        width: 100%;
-    }
-
     .main-title .y,
     .main-title .p {
         font-size: 4rem;

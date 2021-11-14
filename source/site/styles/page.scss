@@ -1,0 +1,12 @@
+$page-color: #78d1f7;
+
+.page {
+    background-color: $page-color;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
