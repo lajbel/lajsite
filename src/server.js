@@ -1,4 +1,4 @@
-//the lajserv
+//the (laj)server
 const express = require("express");
 const sass = require("express-compile-sass");
 const path = require("path");
@@ -47,10 +47,10 @@ app.use(
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use((req, res) => {
-	res.status(404).send("sad");
+	res.status(404).redirect("https://www.youtube.com/watch?v=x31tDT-4fQw");
 });
 
 //listen server
 app.listen(3000, () => {
-	console.log("LaJServ started!");
+	console.log("(laj)server started!");
 });
