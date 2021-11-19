@@ -36,7 +36,7 @@ for (let i = 0; i < redirects.length; i++) {
 //set sass middleware and static
 app.use(
 	sass({
-		root: path.join(__dirname, "pub"),
+		root: path.join(__dirname, "public"),
 		sourceMap: false,
 		sourceComments: false,
 		watchFiles: true,
@@ -44,7 +44,7 @@ app.use(
 	})
 );
 
-app.use(express.static(path.join(__dirname, "pub")));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use((req, res) => {
 	res.status(404).send("sad");
