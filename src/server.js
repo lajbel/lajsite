@@ -6,6 +6,7 @@ const path = require("path");
 const app = express();
 
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 //routes
 const redirects = [
@@ -15,15 +16,15 @@ const redirects = [
 ];
 
 app.get("/", (req, res) => {
-	res.render(path.join(__dirname, "/site/home.ejs"), {title: "Home"});
+	res.render("home.ejs", {title: "Home"});
 });
 
 app.get("/portfolio", (req, res) => {
-	res.render(path.join(__dirname, "/site/portfolio.ejs"), {title: "Portfolio"});
+	res.render("portfolio.ejs", {title: "Portfolio"});
 });
 
 app.get("/contact", (req, res) => {
-	res.render(path.join(__dirname, "/site/contact.ejs"), {title: "Contact"});
+	res.render("contact.ejs", {title: "Contact"});
 });
 
 for (let i = 0; i < redirects.length; i++) {
@@ -35,7 +36,7 @@ for (let i = 0; i < redirects.length; i++) {
 //set sass middleware and static
 app.use(
 	sass({
-		root: __dirname,
+		root: path.join(__dirname, "pub"),
 		sourceMap: false,
 		sourceComments: false,
 		watchFiles: true,
@@ -43,7 +44,7 @@ app.use(
 	})
 );
 
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, "pub")));
 
 app.use((req, res) => {
 	res.status(404).send("sad");
