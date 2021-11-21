@@ -3,8 +3,9 @@
 		{
 			"name": "Eggou",
 			"type": "Game",
-			"description": "Bullet Hell with Chikens",
-			"image": "img/eggou.png"
+			"desc": "Bullet Hell with Chikens",
+			"link": "https://lajbel.itch.io/purple-egg",
+			"img": "img/eggou.png"
 		}
 	]
 }

@@ -2,11 +2,16 @@
 const express = require("express");
 const sass = require("express-compile-sass");
 const path = require("path");
+const { readFileSync } = require("fs");
 
 const app = express();
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
+
+//project json
+const projectsData = readFileSync("src/projects.json");
+const projects = JSON.parse(projectsData).data;
 
 //routes
 const redirects = [
@@ -16,15 +21,15 @@ const redirects = [
 ];
 
 app.get("/", (req, res) => {
-	res.render("home.ejs", {title: "Home"});
+	res.render("home.ejs", { title: "Home" });
 });
 
 app.get("/portfolio", (req, res) => {
-	res.render("portfolio.ejs", {title: "Portfolio"});
+	res.render("portfolio.ejs", { title: "Portfolio", projects: projects });
 });
 
 app.get("/contact", (req, res) => {
-	res.render("contact.ejs", {title: "Contact"});
+	res.render("contact.ejs", { title: "Contact" });
 });
 
 for (let i = 0; i < redirects.length; i++) {

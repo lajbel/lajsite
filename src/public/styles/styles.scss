@@ -39,12 +39,12 @@ body {
 
 	.y {
 		color: #fffc98;
-		font-size: 3em;
+		font-size: calc(2.3em + 1vw);
 	}
 
 	.p {
 		color: #ff98f5;
-		font-size: 3em;
+		font-size: calc(2.3em + 1vw);
 	}
 
 	&:hover {

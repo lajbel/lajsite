@@ -13,16 +13,14 @@
 			</h1>
 
 			<div class="projects">
+				<% projects.forEach((prj) => { %>
+					<%- include("./partials/project", { name: prj.name, desc: prj.desc, img: prj.img, link: prj.link }); %>
+				<%  }); %>
+
 				<div class="project">
 					<img src="assets/eggs.png" />
 					<h2><a href="https://lajbel.itch.io/purple-egg" target="_blank">Purple Egg 100</a></h2>
 					<p>Find the purple egg</p>
-				</div>
-
-				<div class="project">
-					<img src="assets/eggou.png" />
-					<h2><a href="https://lattea.itch.io/eggou" target="_blank">Eggou</a></h2>
-					<p>Bullet Hell with flyer chikens</p>
 				</div>
 
 				<div class="project">
