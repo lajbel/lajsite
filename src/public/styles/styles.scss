@@ -1,6 +1,7 @@
 @import "styles/email";
 @import "styles/list";
 @import "styles/page";
+@import "styles/social";
 
 @import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
 
@@ -132,6 +133,6 @@ body {
 
 @media only screen and (max-width: 992px) {
 	.bio {
-		padding: 0px 30px;
+		padding: 0px 10px;
 	}
 }

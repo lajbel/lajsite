@@ -1,0 +1,46 @@
+$outline-color: #1A1423;
+
+.social {
+	text-align: center;
+	list-style: none;
+	margin: 10px;
+	font-size: 2em;
+
+	li {
+		display: inline-block;
+		margin: 5px;
+
+		a {
+			text-decoration: none;
+		}
+
+		span.twitter {
+			color: #1DA1F2;
+		}
+
+		span.github {
+			color: #171515;
+		}
+
+		span.p {
+			color: green;
+		}
+
+		span.itchio {
+			color: #fA5C5C;
+		}
+
+		&.outline {
+			/* Thanks to StackOverFlow and Wonder*/
+			text-shadow:
+    			-1px -1px 0 #000000,
+    			1px -1px 0 #000000,
+    			-1px 1px 0 #000000,
+    			1px 1px 0 #000000,  
+    			-2px 0 0 #000000,
+    			2px 0 0 #000000,
+    			0 2px 0 #000000,
+    			0 -2px 0 #000000;
+		}
+	}
+}
