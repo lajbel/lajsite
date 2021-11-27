@@ -12,17 +12,22 @@
 				<div class="p">Bel</div>
 			</h1>
 
-			<div class="lajvatar">
+			<div class="lajvatar avatar" onclick="photoEgg();">
 				<img src="assets/lajvatar.png" />
+				<p id="easteregg"></p>
 			</div>
 
 			<p class="bio">
-				Hi!!! I am LaJBel/Dani, a 15yo web developer, I like make games, webs and bots! learn new things and tecnologies.<br />I Love the Coffee, Javascript and TLOZ ☕
+				Hi!!! I am LaJBel/Dani, a 15yo web developer, mainly in front-end. I like make games,
+				webs and bots! learn new things and tecnologies.
+				<br />
+				I Love Js/Ts and the coffee 💻☕
 			</p>
 
 			<%- include("./partials/social") %>
-
 			<%- include("./partials/nav") %>
+
+			<script src="scripts/photoegg.js"></script>
 		</div>
 	</body>
 </html>

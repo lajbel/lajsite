@@ -17,6 +17,7 @@ const projects = JSON.parse(projectsData).data;
 const redirects = [
 	[":var(kofi|donate)", "https://ko-fi.com/L3L26XTGV"],
 	["commisions", "http://ko-fi.com/lajbelms/commissions"],
+	["about", "https://peerlist.io/lajbel"],
 	["bwd", "https://lajbel.itch.io/bug-wanna-die"],
 ];
 

@@ -65,17 +65,26 @@ body {
     avatar
 ----------------------*/
 
-.lajvatar {
-	display: flex;
-	justify-content: center;
-	width: 100%;
+.avatar {
+	display: block;
+	text-align: center;
 }
 
-.lajvatar img {
+.avatar img {
+	border: 5px solid var(--border-color);
 	border-radius: 50%;
-	outline: 5px solid var(--border-color);
 	width: 100%;
 	max-width: 260px;
+	cursor: pointer;
+}
+
+.avatar #easteregg {
+	display: none;
+	margin-top: 15px;
+}
+
+.avatar #easteregg.show {
+	display: block;
 }
 
 /*----------------------
