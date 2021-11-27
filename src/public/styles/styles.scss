@@ -2,6 +2,7 @@
 @import "styles/list";
 @import "styles/page";
 @import "styles/social";
+@import "styles/avatar";
 
 @import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
 
@@ -59,32 +60,6 @@ body {
 			transition: 0.6s;
 		}
 	}
-}
-
-/*----------------------
-    avatar
-----------------------*/
-
-.avatar {
-	display: block;
-	text-align: center;
-}
-
-.avatar img {
-	border: 5px solid var(--border-color);
-	border-radius: 50%;
-	width: 100%;
-	max-width: 260px;
-	cursor: pointer;
-}
-
-.avatar #easteregg {
-	display: none;
-	margin-top: 15px;
-}
-
-.avatar #easteregg.show {
-	display: block;
 }
 
 /*----------------------
