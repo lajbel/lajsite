@@ -48,6 +48,6 @@ const funnyThings = [
 easteregg.innerHTML = `<span class="big">“</span>` + funnyThings[Math.floor(Math.random() * funnyThings.length)] + `<span class="big">”</span>`;
 
 function photoEgg() {
-	if(!easteregg.classList.contains("show")) easteregg.classList.add("show");
+	if (!easteregg.classList.contains("show")) easteregg.classList.add("show");
 	else easteregg.classList.remove("show");
-};
+}

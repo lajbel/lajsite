@@ -1,4 +1,4 @@
-$outline-color: #1A1423;
+$outline-color: #1a1423;
 
 .social {
 	text-align: center;
@@ -15,7 +15,7 @@ $outline-color: #1A1423;
 		}
 
 		span.twitter {
-			color: #1DA1F2;
+			color: #1da1f2;
 		}
 
 		span.github {
@@ -27,20 +27,12 @@ $outline-color: #1A1423;
 		}
 
 		span.itchio {
-			color: #fA5C5C;
+			color: #fa5c5c;
 		}
 
 		&.outline {
 			/* Thanks to StackOverFlow and Wonder*/
-			text-shadow:
-    			-1px -1px 0 #000000,
-    			1px -1px 0 #000000,
-    			-1px 1px 0 #000000,
-    			1px 1px 0 #000000,  
-    			-2px 0 0 #000000,
-    			2px 0 0 #000000,
-    			0 2px 0 #000000,
-    			0 -2px 0 #000000;
+			text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -2px 0 0 #000000, 2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000;
 		}
 	}
 }
